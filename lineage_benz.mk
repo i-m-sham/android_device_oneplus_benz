@@ -28,3 +28,27 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceProduct=CPH2613 \
     SystemDevice=OP5D3FL1 \
     SystemName=CPH2613
+
+TARGET_DISABLE_EPPE := true
+# Camera information (multiple sensors supported)
+AXION_CAMERA_REAR_INFO := 50,8
+AXION_CAMERA_FRONT_INFO := 16
+
+# Maintainer name (underscores become spaces in the UI)
+AXION_MAINTAINER := i-m-sham
+
+# Processor name (underscores become spaces)
+AXION_PROCESSOR := Snapdragon_7_Gen_3
+
+# doze flags
+# for devices with doze/sensor related issues 
+TARGET_NEEDS_DOZE_FIX := false
+# doze gestures
+TARGET_DOZE_TAP_PULSE_SUPPORTED ?= true
+TARGET_DOZE_DOUBLE_TAP_PULSE_SUPPORTED ?= true
+TARGET_DOZE_PICKUP_PULSE_SUPPORTED ?= true
+TARGET_DOZE_SIDE_FPS_PULSE_SUPPORTED ?= false
+
+#Bypass Charging
+BYPASS_CHARGE_SUPPORTED := true
+TARGET_SUPPORTED_REFRESH_RATES := 60,90,120
